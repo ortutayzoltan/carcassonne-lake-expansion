@@ -84,11 +84,6 @@ carcassonne-lake-expansion/
 
 🎲 **Concept phase** — Ready for prototyping and playtesting
 
----
-
-## License
-
-This project is licensed under [CC BY 4.0](LICENSE) — free to use, share, and adapt with attribution.
 
 ---
 
