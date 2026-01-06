@@ -1,0 +1,329 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 550 650" width="550" height="650">
+  <style>
+    .tile { stroke: #333; stroke-width: 1; }
+    .lake { fill: #4a90d9; }
+    .field { fill: #7cb342; }
+    .road { fill: white; stroke: #999; stroke-width: 0.5; }
+    .city { fill: #8b5a2b; }
+    .fish { font-size: 8px; font-family: Arial; fill: #333; }
+    .title { font-size: 9px; font-family: Arial; font-weight: bold; fill: #333; }
+    .island { fill: #c9a227; }
+    .header { font-size: 16px; font-family: Arial; font-weight: bold; fill: #333; }
+    .label { font-size: 7px; font-family: Arial; fill: #333; }
+  </style>
+  
+  <!-- Title -->
+  <text x="275" y="25" text-anchor="middle" class="header">Carcassonne Lake Expansion — 25 Tiles</text>
+  
+  <!-- Each tile: 4 triangles meeting at center (50,50) -->
+  <!-- Top triangle: 0,0 -> 100,0 -> 50,50 -->
+  <!-- Right triangle: 100,0 -> 100,100 -> 50,50 -->
+  <!-- Bottom triangle: 100,100 -> 0,100 -> 50,50 -->
+  <!-- Left triangle: 0,100 -> 0,0 -> 50,50 -->
+  
+  <!-- Row 1: Caps 1-5 -->
+  
+  <!-- Cap 1: Field/Field/Lake/Field -->
+  <g transform="translate(25, 45)">
+    <polygon points="0,0 100,0 50,50" class="tile field"/>
+    <polygon points="100,0 100,100 50,50" class="tile field"/>
+    <polygon points="100,100 0,100 50,50" class="tile lake"/>
+    <polygon points="0,100 0,0 50,50" class="tile field"/>
+    <text x="50" y="35" text-anchor="middle" class="title">Cap 1</text>
+    <text x="50" y="48" text-anchor="middle" class="fish">🐟 0</text>
+  </g>
+  
+  <!-- Cap 2: Field/Field/Lake/Road -->
+  <g transform="translate(130, 45)">
+    <polygon points="0,0 100,0 50,50" class="tile field"/>
+    <polygon points="100,0 100,100 50,50" class="tile field"/>
+    <polygon points="100,100 0,100 50,50" class="tile lake"/>
+    <polygon points="0,100 0,0 50,50" class="tile field"/>
+    <rect x="0" y="46" width="50" height="8" class="road"/>
+    <text x="50" y="35" text-anchor="middle" class="title">Cap 2</text>
+    <text x="50" y="48" text-anchor="middle" class="fish">🐟 0</text>
+  </g>
+  
+  <!-- Cap 3: Field/Road/Lake/Road (connected) -->
+  <g transform="translate(235, 45)">
+    <polygon points="0,0 100,0 50,50" class="tile field"/>
+    <polygon points="100,0 100,100 50,50" class="tile field"/>
+    <polygon points="100,100 0,100 50,50" class="tile lake"/>
+    <polygon points="0,100 0,0 50,50" class="tile field"/>
+    <rect x="0" y="46" width="100" height="8" class="road"/>
+    <text x="50" y="35" text-anchor="middle" class="title">Cap 3</text>
+    <text x="50" y="48" text-anchor="middle" class="fish">🐟 0</text>
+  </g>
+  
+  <!-- Cap 4: Road/Field/Lake/Field -->
+  <g transform="translate(340, 45)">
+    <polygon points="0,0 100,0 50,50" class="tile field"/>
+    <polygon points="100,0 100,100 50,50" class="tile field"/>
+    <polygon points="100,100 0,100 50,50" class="tile lake"/>
+    <polygon points="0,100 0,0 50,50" class="tile field"/>
+    <rect x="46" y="0" width="8" height="50" class="road"/>
+    <text x="50" y="70" text-anchor="middle" class="title">Cap 4</text>
+    <text x="50" y="83" text-anchor="middle" class="fish">🐟 0</text>
+  </g>
+  
+  <!-- Cap 5: City/Field/Lake/Field -->
+  <g transform="translate(445, 45)">
+    <polygon points="0,0 100,0 50,50" class="tile city"/>
+    <polygon points="100,0 100,100 50,50" class="tile field"/>
+    <polygon points="100,100 0,100 50,50" class="tile lake"/>
+    <polygon points="0,100 0,0 50,50" class="tile field"/>
+    <text x="50" y="55" text-anchor="middle" class="title">Cap 5</text>
+    <text x="50" y="68" text-anchor="middle" class="fish">🐟 0</text>
+  </g>
+  
+  <!-- Row 2: Caps 6-8, Corners 1-2 -->
+  
+  <!-- Cap 6: City/Field/Lake/City -->
+  <g transform="translate(25, 155)">
+    <polygon points="0,0 100,0 50,50" class="tile city"/>
+    <polygon points="100,0 100,100 50,50" class="tile field"/>
+    <polygon points="100,100 0,100 50,50" class="tile lake"/>
+    <polygon points="0,100 0,0 50,50" class="tile city"/>
+    <text x="50" y="55" text-anchor="middle" class="title">Cap 6</text>
+    <text x="50" y="68" text-anchor="middle" class="fish">🐟 0</text>
+  </g>
+  
+  <!-- Cap 7: Field/City/Lake/Road -->
+  <g transform="translate(130, 155)">
+    <polygon points="0,0 100,0 50,50" class="tile field"/>
+    <polygon points="100,0 100,100 50,50" class="tile city"/>
+    <polygon points="100,100 0,100 50,50" class="tile lake"/>
+    <polygon points="0,100 0,0 50,50" class="tile field"/>
+    <rect x="0" y="46" width="50" height="8" class="road"/>
+    <text x="50" y="35" text-anchor="middle" class="title">Cap 7</text>
+    <text x="50" y="48" text-anchor="middle" class="fish">🐟 0</text>
+  </g>
+  
+  <!-- Cap 8: City/City/Lake/Field -->
+  <g transform="translate(235, 155)">
+    <polygon points="0,0 100,0 50,50" class="tile city"/>
+    <polygon points="100,0 100,100 50,50" class="tile city"/>
+    <polygon points="100,100 0,100 50,50" class="tile lake"/>
+    <polygon points="0,100 0,0 50,50" class="tile field"/>
+    <text x="50" y="55" text-anchor="middle" class="title">Cap 8</text>
+    <text x="50" y="68" text-anchor="middle" class="fish">🐟 0</text>
+  </g>
+  
+  <!-- Corner 1: Field/Lake/Lake/Field -->
+  <g transform="translate(340, 155)">
+    <polygon points="0,0 100,0 50,50" class="tile field"/>
+    <polygon points="100,0 100,100 50,50" class="tile lake"/>
+    <polygon points="100,100 0,100 50,50" class="tile lake"/>
+    <polygon points="0,100 0,0 50,50" class="tile field"/>
+    <text x="50" y="35" text-anchor="middle" class="title">Cnr 1</text>
+    <text x="50" y="48" text-anchor="middle" class="fish">🐟 0</text>
+  </g>
+  
+  <!-- Corner 2: Field/Lake/Lake/Road -->
+  <g transform="translate(445, 155)">
+    <polygon points="0,0 100,0 50,50" class="tile field"/>
+    <polygon points="100,0 100,100 50,50" class="tile lake"/>
+    <polygon points="100,100 0,100 50,50" class="tile lake"/>
+    <polygon points="0,100 0,0 50,50" class="tile field"/>
+    <rect x="0" y="46" width="50" height="8" class="road"/>
+    <text x="50" y="35" text-anchor="middle" class="title">Cnr 2</text>
+    <text x="50" y="48" text-anchor="middle" class="fish">🐟 1</text>
+  </g>
+  
+  <!-- Row 3: Corners 3-6, Straight 1 -->
+  
+  <!-- Corner 3: Road/Lake/Lake/Road (roads meet) -->
+  <g transform="translate(25, 265)">
+    <polygon points="0,0 100,0 50,50" class="tile field"/>
+    <polygon points="100,0 100,100 50,50" class="tile lake"/>
+    <polygon points="100,100 0,100 50,50" class="tile lake"/>
+    <polygon points="0,100 0,0 50,50" class="tile field"/>
+    <rect x="0" y="46" width="50" height="8" class="road"/>
+    <rect x="46" y="0" width="8" height="50" class="road"/>
+    <text x="50" y="70" text-anchor="middle" class="title">Cnr 3</text>
+    <text x="50" y="83" text-anchor="middle" class="fish">🐟 0</text>
+  </g>
+  
+  <!-- Corner 4: City/Lake/Lake/Field -->
+  <g transform="translate(130, 265)">
+    <polygon points="0,0 100,0 50,50" class="tile city"/>
+    <polygon points="100,0 100,100 50,50" class="tile lake"/>
+    <polygon points="100,100 0,100 50,50" class="tile lake"/>
+    <polygon points="0,100 0,0 50,50" class="tile field"/>
+    <text x="50" y="55" text-anchor="middle" class="title">Cnr 4</text>
+    <text x="50" y="68" text-anchor="middle" class="fish">🐟 1</text>
+  </g>
+  
+  <!-- Corner 5: City/Lake/Lake/City -->
+  <g transform="translate(235, 265)">
+    <polygon points="0,0 100,0 50,50" class="tile city"/>
+    <polygon points="100,0 100,100 50,50" class="tile lake"/>
+    <polygon points="100,100 0,100 50,50" class="tile lake"/>
+    <polygon points="0,100 0,0 50,50" class="tile city"/>
+    <text x="50" y="55" text-anchor="middle" class="title">Cnr 5</text>
+    <text x="50" y="68" text-anchor="middle" class="fish">🐟 1</text>
+  </g>
+  
+  <!-- Corner 6: City/Lake/Lake/Road -->
+  <g transform="translate(340, 265)">
+    <polygon points="0,0 100,0 50,50" class="tile city"/>
+    <polygon points="100,0 100,100 50,50" class="tile lake"/>
+    <polygon points="100,100 0,100 50,50" class="tile lake"/>
+    <polygon points="0,100 0,0 50,50" class="tile field"/>
+    <rect x="0" y="46" width="50" height="8" class="road"/>
+    <text x="50" y="35" text-anchor="middle" class="title">Cnr 6</text>
+    <text x="50" y="48" text-anchor="middle" class="fish">🐟 1</text>
+  </g>
+  
+  <!-- Straight 1: Field/Lake/Field/Lake -->
+  <g transform="translate(445, 265)">
+    <polygon points="0,0 100,0 50,50" class="tile field"/>
+    <polygon points="100,0 100,100 50,50" class="tile lake"/>
+    <polygon points="100,100 0,100 50,50" class="tile field"/>
+    <polygon points="0,100 0,0 50,50" class="tile lake"/>
+    <text x="50" y="55" text-anchor="middle" class="title">Str 1</text>
+    <text x="50" y="68" text-anchor="middle" class="fish">🐟 1</text>
+  </g>
+  
+  <!-- Row 4: Straights 2-4, T-shapes 1-2 -->
+  
+  <!-- Straight 2: Road/Lake/Field/Lake -->
+  <g transform="translate(25, 375)">
+    <polygon points="0,0 100,0 50,50" class="tile field"/>
+    <polygon points="100,0 100,100 50,50" class="tile lake"/>
+    <polygon points="100,100 0,100 50,50" class="tile field"/>
+    <polygon points="0,100 0,0 50,50" class="tile lake"/>
+    <rect x="46" y="0" width="8" height="50" class="road"/>
+    <text x="50" y="70" text-anchor="middle" class="title">Str 2</text>
+    <text x="50" y="83" text-anchor="middle" class="fish">🐟 1</text>
+  </g>
+  
+  <!-- Straight 3: Road/Lake/Road/Lake (connected) -->
+  <g transform="translate(130, 375)">
+    <polygon points="0,0 100,0 50,50" class="tile field"/>
+    <polygon points="100,0 100,100 50,50" class="tile lake"/>
+    <polygon points="100,100 0,100 50,50" class="tile field"/>
+    <polygon points="0,100 0,0 50,50" class="tile lake"/>
+    <rect x="46" y="0" width="8" height="100" class="road"/>
+    <text x="50" y="55" text-anchor="middle" class="title">Str 3</text>
+    <text x="25" y="55" text-anchor="middle" class="fish">🐟 1</text>
+  </g>
+  
+  <!-- Straight 4: City/Lake/Field/Lake -->
+  <g transform="translate(235, 375)">
+    <polygon points="0,0 100,0 50,50" class="tile city"/>
+    <polygon points="100,0 100,100 50,50" class="tile lake"/>
+    <polygon points="100,100 0,100 50,50" class="tile field"/>
+    <polygon points="0,100 0,0 50,50" class="tile lake"/>
+    <text x="50" y="55" text-anchor="middle" class="title">Str 4</text>
+    <text x="50" y="68" text-anchor="middle" class="fish">🐟 1</text>
+  </g>
+  
+  <!-- T-shape 1: Field/Lake/Lake/Lake -->
+  <g transform="translate(340, 375)">
+    <polygon points="0,0 100,0 50,50" class="tile field"/>
+    <polygon points="100,0 100,100 50,50" class="tile lake"/>
+    <polygon points="100,100 0,100 50,50" class="tile lake"/>
+    <polygon points="0,100 0,0 50,50" class="tile lake"/>
+    <text x="50" y="35" text-anchor="middle" class="title">T-Shape 1</text>
+    <text x="50" y="48" text-anchor="middle" class="fish">🐟 2</text>
+  </g>
+  
+  <!-- T-shape 2: Road/Lake/Lake/Lake -->
+  <g transform="translate(445, 375)">
+    <polygon points="0,0 100,0 50,50" class="tile field"/>
+    <polygon points="100,0 100,100 50,50" class="tile lake"/>
+    <polygon points="100,100 0,100 50,50" class="tile lake"/>
+    <polygon points="0,100 0,0 50,50" class="tile lake"/>
+    <rect x="46" y="0" width="8" height="50" class="road"/>
+    <text x="50" y="70" text-anchor="middle" class="title">T-Shape 2</text>
+    <text x="50" y="83" text-anchor="middle" class="fish">🐟 1</text>
+  </g>
+  
+  <!-- Row 5: T-shape 3, Open Water 1-2, Treasure Islands 1-2 -->
+  
+  <!-- T-shape 3: City/Lake/Lake/Lake -->
+  <g transform="translate(25, 485)">
+    <polygon points="0,0 100,0 50,50" class="tile city"/>
+    <polygon points="100,0 100,100 50,50" class="tile lake"/>
+    <polygon points="100,100 0,100 50,50" class="tile lake"/>
+    <polygon points="0,100 0,0 50,50" class="tile lake"/>
+    <text x="50" y="55" text-anchor="middle" class="title">T-Shape 3</text>
+    <text x="50" y="68" text-anchor="middle" class="fish">🐟 2</text>
+  </g>
+  
+  <!-- Open Water 1: Lake/Lake/Lake/Lake -->
+  <g transform="translate(130, 485)">
+    <polygon points="0,0 100,0 50,50" class="tile lake"/>
+    <polygon points="100,0 100,100 50,50" class="tile lake"/>
+    <polygon points="100,100 0,100 50,50" class="tile lake"/>
+    <polygon points="0,100 0,0 50,50" class="tile lake"/>
+    <text x="50" y="45" text-anchor="middle" style="fill:white" class="title">Open</text>
+    <text x="50" y="58" text-anchor="middle" style="fill:white" class="title">Water 1</text>
+    <text x="50" y="75" text-anchor="middle" class="fish">🐟 2</text>
+  </g>
+  
+  <!-- Open Water 2: Lake/Lake/Lake/Lake -->
+  <g transform="translate(235, 485)">
+    <polygon points="0,0 100,0 50,50" class="tile lake"/>
+    <polygon points="100,0 100,100 50,50" class="tile lake"/>
+    <polygon points="100,100 0,100 50,50" class="tile lake"/>
+    <polygon points="0,100 0,0 50,50" class="tile lake"/>
+    <text x="50" y="45" text-anchor="middle" style="fill:white" class="title">Open</text>
+    <text x="50" y="58" text-anchor="middle" style="fill:white" class="title">Water 2</text>
+    <text x="50" y="75" text-anchor="middle" class="fish">🐟 3</text>
+  </g>
+  
+  <!-- Treasure Island 1: Field/Lake/Lake/Lake + island -->
+  <g transform="translate(340, 485)">
+    <polygon points="0,0 100,0 50,50" class="tile field"/>
+    <polygon points="100,0 100,100 50,50" class="tile lake"/>
+    <polygon points="100,100 0,100 50,50" class="tile lake"/>
+    <polygon points="0,100 0,0 50,50" class="tile lake"/>
+    <ellipse cx="50" cy="60" rx="15" ry="12" class="island"/>
+    <text x="50" y="64" text-anchor="middle" class="label">💎</text>
+    <text x="50" y="20" text-anchor="middle" class="title">Treasure 1</text>
+    <text x="50" y="90" text-anchor="middle" class="fish">🐟 1 (2x)</text>
+  </g>
+  
+  <!-- Treasure Island 2: Lake/Lake/Lake/Lake + island -->
+  <g transform="translate(445, 485)">
+    <polygon points="0,0 100,0 50,50" class="tile lake"/>
+    <polygon points="100,0 100,100 50,50" class="tile lake"/>
+    <polygon points="100,100 0,100 50,50" class="tile lake"/>
+    <polygon points="0,100 0,0 50,50" class="tile lake"/>
+    <ellipse cx="50" cy="50" rx="15" ry="12" class="island"/>
+    <text x="50" y="54" text-anchor="middle" class="label">💎</text>
+    <text x="50" y="20" text-anchor="middle" style="fill:white" class="title">Treasure 2</text>
+    <text x="50" y="90" text-anchor="middle" class="fish">🐟 1 (2x)</text>
+  </g>
+  
+  <!-- Legend -->
+  <g transform="translate(25, 600)">
+    <polygon points="0,0 20,0 10,10" class="tile lake"/>
+    <polygon points="20,0 20,15 10,10" class="tile lake"/>
+    <polygon points="20,15 0,15 10,10" class="tile lake"/>
+    <polygon points="0,15 0,0 10,10" class="tile lake"/>
+    <text x="30" y="12" class="label">Lake</text>
+    
+    <polygon points="80,0 100,0 90,10" class="tile field"/>
+    <polygon points="100,0 100,15 90,10" class="tile field"/>
+    <polygon points="100,15 80,15 90,10" class="tile field"/>
+    <polygon points="80,15 80,0 90,10" class="tile field"/>
+    <text x="110" y="12" class="label">Field</text>
+    
+    <rect x="160" y="3" width="20" height="8" class="road"/>
+    <text x="185" y="12" class="label">Road</text>
+    
+    <polygon points="230,0 250,0 240,10" class="tile city"/>
+    <polygon points="250,0 250,15 240,10" class="tile city"/>
+    <polygon points="250,15 230,15 240,10" class="tile city"/>
+    <polygon points="230,15 230,0 240,10" class="tile city"/>
+    <text x="260" y="12" class="label">City</text>
+    
+    <ellipse cx="320" cy="7" rx="10" ry="7" class="island"/>
+    <text x="340" y="12" class="label">Treasure Island</text>
+    
+    <text x="450" y="12" class="label">🐟 = Fish | (2x) = Doubler</text>
+  </g>
+</svg>
