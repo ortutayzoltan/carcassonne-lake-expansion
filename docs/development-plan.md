@@ -7,10 +7,10 @@ A step-by-step guide to take this expansion from concept to finished product.
 ## Phase 1: Rules Refinement
 
 ### 1.1 Finalize Core Rules
-- [ ] Decide how lakes interact with fields (do they interrupt fields like rivers?)
-- [ ] Clarify what happens when two lakes merge with multiple fishermen
-- [ ] Determine if fishermen can be placed on a single-tile lake
-- [ ] Write clear rules for Treasure Island doubling (confirm no stacking)
+- [x] Decide how lakes interact with fields (do they interrupt fields like rivers?)
+- [x] Clarify what happens when two lakes merge with multiple fishermen
+- [x] Determine if fishermen can be placed on a single-tile lake
+- [x] Write clear rules for Treasure Island doubling (confirm no stacking)
 
 ### 1.2 Write Rulebook Draft
 - [ ] Write 1-2 page rulebook in Carcassonne style
@@ -28,8 +28,8 @@ A step-by-step guide to take this expansion from concept to finished product.
 ## Phase 2: Tile Design
 
 ### 2.1 Create Tile Specifications
-- [ ] List all 25 tiles with exact edge configurations
-- [ ] Assign fish counts to each tile
+- [x] List all 25 tiles with exact edge configurations
+- [x] Assign fish counts to each tile
 - [ ] Mark which tiles get duplicates (if any)
 - [ ] Decide on tile back design (match base game or unique?)
 

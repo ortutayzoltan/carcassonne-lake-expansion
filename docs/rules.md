@@ -25,9 +25,13 @@ Place a **Fisherman** on a lake to claim it. The fisherman works exactly like a 
 | Condition | Points |
 |-----------|--------|
 | Completed lake | 2 points per tile + 1 point per fish icon |
-| Incomplete lake | 0 points |
+| Incomplete lake at game end | 0 points |
 
 This creates real tension—lakes are worthless if you can't close them, so there's risk in starting large ones and opportunity to sabotage opponents.
+
+### Single-Tile Lakes
+
+A single Cap tile with all non-lake edges satisfied does **not** form a complete lake on its own—a lake requires at least one other tile contributing a lake edge. A fisherman may be placed on a single-tile lake-in-progress, but it scores nothing unless the lake is later completed.
 
 ---
 
@@ -179,6 +183,19 @@ When placing a tile that connects two separate lakes:
 
 ---
 
+## Edge Cases
+
+### Uncompletable Lake
+If the remaining tile stack makes it impossible to close a lake (e.g., no caps remain), it scores zero at game end. Players must judge this risk during play—there is no compensation for an impossible-to-complete lake.
+
+### One Tile Completing Two Lakes
+A tile placement cannot merge two previously separate lakes into one via a single tile that touches both. Each tile has only four edges; any edge touching a different lake would mean that lake edge was already open on the connecting tile. The standard merge rule applies when a new tile's lake edges connect to two existing lake groups.
+
+### Cross-Expansion Interactions
+When lake edges would need to interact with a non-lake feature from another expansion (e.g., a bridge from Bridges, Castles & Bazaars crossing over a lake edge), treat the lake edge as impassable terrain—the bridge does not connect or close the lake.
+
+---
+
 ## Strategy Tips
 
 1. **Small lakes are safe but low-scoring** — Easy to close but few fish
@@ -193,10 +210,11 @@ When placing a tile that connects two separate lakes:
 
 This expansion is designed to work with:
 
-- Carcassonne base game (required)
-- Inns & Cathedrals (lake equivalent of Inn could be added)
-- Traders & Builders (fish work differently than trade goods)
-- Most other expansions
+- **Carcassonne base game** (required)
+- **Inns & Cathedrals** — Lakes work as a third competitive structure alongside cities and roads. An "Inn on a Lake" variant is a natural extension: mark specific lake-edge tiles with an inn token that doubles the per-tile value (or zeroes it if incomplete), mirroring the Inn on a Road rule.
+- **Traders & Builders** — Fish icons are independent of trade goods and do not count as Traders & Builders commodities. The Builder cannot be placed on a lake.
+- **The River** — Lake tiles may be placed alongside river tiles; they are independent terrain types.
+- **Other expansions** — No known conflicts, but lakes have not been tested with Abbey & Mayor or the Princess & Dragon. Treat lake edges as equivalent to city walls for any expansion rule that references "enclosed feature."
 
 ---
 

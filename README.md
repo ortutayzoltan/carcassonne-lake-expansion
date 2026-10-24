@@ -52,6 +52,7 @@ Lakes work like cities: lake edges must connect to other lake edges, and a lake 
 
 - [Full Rules](docs/rules.md) — Complete rules and tile specifications
 - [Development Plan](docs/development-plan.md) — Step-by-step guide to make this expansion
+- [Contributing](CONTRIBUTING.md) — How to playtest, report issues, or contribute artwork
 
 ---
 
@@ -75,7 +76,12 @@ carcassonne-lake-expansion/
 │   ├── rules.md
 │   └── development-plan.md
 └── assets/
-    └── tile-grid.svg
+    ├── tile-grid.svg        ← reference grid of all 25 tiles
+    ├── lake1.png            ┐
+    ├── lake2.png            │
+    ├── lake3.png            ├─ concept art / visual inspiration
+    ├── lake4.png            │
+    └── lake5.png            ┘
 ```
 
 ---
@@ -83,6 +89,8 @@ carcassonne-lake-expansion/
 ## Status
 
 🎲 **Concept phase** — Ready for prototyping and playtesting
+
+**Version:** v0.1.0
 
 
 ---
