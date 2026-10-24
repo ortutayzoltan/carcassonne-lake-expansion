@@ -26,7 +26,7 @@ Lakes work like cities: lake edges must connect to other lake edges, and a lake 
 
 | Lake | Tiles | Fish | Score |
 |------|-------|------|-------|
-| Small | 3 | 2 | 8 |
+| Small | 3 | 1 | 7 |
 | Medium | 5 | 4 | 14 |
 | Large | 8 | 9 | 25 |
 | Large + Treasure Island | 8 | 9 | 50 |
@@ -72,6 +72,10 @@ Lakes work like cities: lake edges must connect to other lake edges, and a lake 
 carcassonne-lake-expansion/
 ├── README.md
 ├── LICENSE
+├── CONTRIBUTING.md
+├── .github/
+│   └── ISSUE_TEMPLATE/
+│       └── playtest-report.md
 ├── docs/
 │   ├── rules.md
 │   └── development-plan.md
@@ -91,7 +95,6 @@ carcassonne-lake-expansion/
 🎲 **Concept phase** — Ready for prototyping and playtesting
 
 **Version:** v0.1.0
-
 
 ---
 

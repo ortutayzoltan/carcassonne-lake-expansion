@@ -18,7 +18,7 @@ The most valuable contribution right now is playtesting feedback.
 - Tiles that felt too easy or impossible to place
 - Final scores — were lakes competitive with cities?
 
-Open a GitHub issue with your findings or email feedback directly.
+Open a GitHub issue using the **Playtest report** template. It walks you through all of the points above.
 
 ## Rules Feedback
 

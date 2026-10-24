@@ -19,9 +19,9 @@ A step-by-step guide to take this expansion from concept to finished product.
 - [ ] Have someone unfamiliar with the concept read it for clarity
 
 ### 1.3 Edge Case Review
-- [ ] What if a lake cannot be completed due to tile distribution?
-- [ ] Can a single tile complete two separate lakes?
-- [ ] How do lakes interact with other expansions (Inns & Cathedrals, Traders & Builders)?
+- [x] What if a lake cannot be completed due to tile distribution?
+- [x] Can a single tile complete two separate lakes?
+- [x] How do lakes interact with other expansions (Inns & Cathedrals, Traders & Builders)?
 
 ---
 
@@ -179,7 +179,7 @@ A step-by-step guide to take this expansion from concept to finished product.
 
 ---
 
-## Phase 8: Timeline Estimate
+## Timeline Estimate
 
 | Phase | Duration | Cumulative |
 |-------|----------|------------|
@@ -190,11 +190,11 @@ A step-by-step guide to take this expansion from concept to finished product.
 | Production Design | 2-3 weeks | Week 12 |
 | Manufacturing | 2-6 weeks | Week 18 |
 
-**Total: approximately 3-5 months** from concept to physical copies
+**Total: approximately 11-18 weeks (3-4½ months)** from concept to physical copies. The Cumulative column uses the upper end of each range.
 
 ---
 
-## Phase 9: Checklist Summary
+## Checklist Summary
 
 ### Must Have Before First Playtest
 - [ ] 25 tiles printed on cardstock
@@ -211,7 +211,7 @@ A step-by-step guide to take this expansion from concept to finished product.
 ### Nice to Have
 - [ ] Custom fisherman meeples
 - [ ] Professional box design
-- [ ] Compatibility notes for other expansions
+- [x] Compatibility notes for other expansions (see rules.md)
 - [ ] Player reference cards
 
 ---
@@ -263,7 +263,7 @@ Define tiles programmatically and script assembly:
   "tile": "corner_1",
   "edges": {
     "top": "field",
-    "right": "lake", 
+    "right": "lake",
     "bottom": "lake",
     "left": "field"
   },

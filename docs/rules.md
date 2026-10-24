@@ -4,6 +4,16 @@
 
 A new edge type for Carcassonne featuring lakes that score like cities but with a fishing twist.
 
+**Contents:** [Setup](#setup) · [Core Rules](#core-rules) · [Fish Icons](#fish-icons) · [Treasure Island](#special-tile-treasure-island) · [Scoring Examples](#scoring-examples) · [Tile Set](#tile-set-25-tiles) · [Interactions](#interactions) · [Edge Cases](#edge-cases) · [Strategy Tips](#strategy-tips) · [Compatibility](#compatibility) · [Design Notes](#design-notes)
+
+---
+
+## Setup
+
+1. Shuffle the 25 lake tiles into the base game tile stack.
+2. Each player takes **2 fishermen** in their color, in addition to their normal meeples. (Provisional: the final count will be set by playtesting, see [development plan §2.4](development-plan.md#24-design-fisherman-meeple).)
+3. Play as normal. All base game rules apply unless these rules say otherwise.
+
 ---
 
 ## Core Rules
@@ -16,9 +26,10 @@ Lake edges must connect to other lake edges, just like city walls must connect t
 
 Place a **Fisherman** on a lake to claim it. The fisherman works exactly like a knight in a city:
 
-- Only one fisherman can be placed on an unoccupied lake
+- You may place a fisherman only on the lake segment of the tile you just placed, and only if that lake has no fisherman on it yet
 - If two lakes merge, the player(s) with the most fishermen score the lake
 - Ties result in all tied players scoring full points
+- After a lake is scored, all fishermen on it return to their owners
 
 ### Scoring
 
@@ -31,7 +42,7 @@ This creates real tension—lakes are worthless if you can't close them, so ther
 
 ### Single-Tile Lakes
 
-A single Cap tile with all non-lake edges satisfied does **not** form a complete lake on its own—a lake requires at least one other tile contributing a lake edge. A fisherman may be placed on a single-tile lake-in-progress, but it scores nothing unless the lake is later completed.
+Every lake tile has at least one open lake edge, so no single tile is ever a complete lake. The smallest possible lake is two Caps placed lake-edge to lake-edge. You may place a fisherman on a newly started one-tile lake, but it scores nothing unless the lake is later completed.
 
 ---
 
@@ -45,6 +56,7 @@ Some lake tiles have fish icons (1-3 fish) printed on them. Fish add bonus point
 - Corners/Straights: 0-1 fish
 - T-Shapes: 1-2 fish
 - Open Water: 2-3 fish
+- Treasure Islands: 1 fish (the doubling is their main reward)
 
 ---
 
@@ -67,11 +79,11 @@ Treasure Island tiles have 3-4 lake edges, making them committal. You can't easi
 ## Scoring Examples
 
 ### Example 1: Small Lake
-- 3 tiles, 2 fish
-- Score: (3 × 2) + 2 = **8 points**
+- 3 tiles, 1 fish (Cap + Straight 1 + Cap)
+- Score: (3 × 2) + 1 = **7 points**
 
 ### Example 2: Medium Lake
-- 5 tiles, 4 fish
+- 5 tiles, 4 fish (Corners 1, 2 and 4 plus T-Shape 3 in a 2×2 ring; the T-Shape's third lake edge is closed with a Cap)
 - Score: (5 × 2) + 4 = **14 points**
 
 ### Example 3: Large Lake
@@ -188,8 +200,8 @@ When placing a tile that connects two separate lakes:
 ### Uncompletable Lake
 If the remaining tile stack makes it impossible to close a lake (e.g., no caps remain), it scores zero at game end. Players must judge this risk during play—there is no compensation for an impossible-to-complete lake.
 
-### One Tile Completing Two Lakes
-A tile placement cannot merge two previously separate lakes into one via a single tile that touches both. Each tile has only four edges; any edge touching a different lake would mean that lake edge was already open on the connecting tile. The standard merge rule applies when a new tile's lake edges connect to two existing lake groups.
+### One Tile Touching Two Lakes
+All lake edges on a tile belong to the same body of water. So a tile can never complete two *separate* lakes. If its lake edges touch two or more existing lakes, those lakes merge into one (see [Merging Lakes](#merging-lakes)). That merged lake is complete only if it has no open lake edges left. For example, a Straight placed between two lakes joins them into a single lake.
 
 ### Cross-Expansion Interactions
 When lake edges would need to interact with a non-lake feature from another expansion (e.g., a bridge from Bridges, Castles & Bazaars crossing over a lake edge), treat the lake edge as impassable terrain—the bridge does not connect or close the lake.
