@@ -1,0 +1,17 @@
+# Design output files
+print-output/
+*.ai
+*.psd
+*.afdesign
+
+# Exported print files (generated artifacts)
+*.print.pdf
+*-bleed.pdf
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor temp files
+*.swp
+*~
